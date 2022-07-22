@@ -5,4 +5,5 @@ class User < ApplicationRecord
   validates :password, length: { in: 12..128 }
 
   has_many :posts
+  has_many :comments
 end
